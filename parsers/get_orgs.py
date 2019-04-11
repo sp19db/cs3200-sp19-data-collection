@@ -27,7 +27,7 @@ def get_orgs_data(token, state):
 
 
 def get_metadata():
-    file = open("./shelters/shelters_metadata.txt", "r")
+    file = open("./shelter/shelters_metadata.txt", "r")
     line = file.readline()
     metadata = line.split(" ")
     last_file_id = int(metadata[1].split("=")[1])
@@ -37,11 +37,11 @@ def get_metadata():
 
 
 def write_to_file(file_id, org_id, text):
-    metadata_file = open("./shelters/shelters_metadata.txt", "w")
+    metadata_file = open("./shelter/shelters_metadata.txt", "w")
     metadata_file.write("METADATA last_file=" + str(file_id) + " last_id=" + str(org_id))
     metadata_file.close()
 
-    orgs_data_file = open("./shelters/shelters_" + INPUT_STATE + "_ids_" + str(file_id) + ".txt", "w")
+    orgs_data_file = open("./shelter/shelters_" + INPUT_STATE + "_ids_" + str(file_id) + ".txt", "w")
     orgs_data_file.write(text)
     orgs_data_file.close()
 
@@ -53,7 +53,6 @@ def dump_as_csv(orgs_map):
     orgs = orgs_map['organizations']
 
     # store all org data in a list of dicts
-
     metadata = get_metadata()
     file_id = metadata[0]
     file_id += 1
@@ -75,7 +74,7 @@ def dump_as_csv(orgs_map):
         parsed_org[PHONE_NUMBER] = org['phone']
         parsed_orgs.append(parsed_org)
 
-    shelter_data = open('./shelters/shelters_' + INPUT_STATE + '.csv', 'w')
+    shelter_data = open('./shelter/shelters_' + INPUT_STATE + '.csv', 'w')
     csvwriter = csv.writer(shelter_data)
 
     count = 0
@@ -101,7 +100,7 @@ def run():
     token_generator = TokenGenerator()
     token = token_generator.get_token()
     # get organizations raw data (dict)
-    orgs = get_orgs_data(token, "MA")
+    orgs = get_orgs_data(token, INPUT_STATE)
     # dump shelters info to a csv file
     dump_as_csv(orgs)
 

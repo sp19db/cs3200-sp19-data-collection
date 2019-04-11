@@ -1,0 +1,58 @@
+breed_id,breed_name,type_id
+1,Domestic Short Hair,1
+2,Domestic Long Hair,1
+3,Siamese,1
+4,German Shorthaired Pointer,2
+5,Afghan Hound,2
+6,Cavalier King Charles Spaniel,2
+7,Domestic Medium Hair,1
+8,Tiger,1
+9,Calico,1
+10,Tortoiseshell,1
+11,Tuxedo,1
+12,Dilute Tortoiseshell,1
+13,Tabby,1
+14,German Shepherd Dog,2
+15,Golden Retriever,2
+16,Australian Cattle Dog / Blue Heeler,2
+17,Great Dane,2
+18,Dachshund,2
+19,Husky,2
+20,Bull Terrier,2
+21,Hound,2
+22,Chihuahua,2
+23,Pit Bull Terrier,2
+24,Boxer,2
+25,American Staffordshire Terrier,2
+26,American Bulldog,2
+27,Labrador Retriever,2
+28,Shepherd,2
+29,Siberian Husky,2
+30,Beagle,2
+31,Terrier,2
+32,Doberman Pinscher,2
+33,Collie,2
+34,Shih Tzu,2
+35,Plott Hound,2
+36,Jack Russell Terrier,2
+37,Guinea Pig,3
+38,New Zealand,4
+39,Chinchilla,3
+40,Hamster,3
+41,Cockatoo,5
+42,English Lop,4
+43,Mini Lop,4
+44,Maine Coon,1
+45,Extra-Toes Cat / Hemingway Polydactyl,1
+46,Pointer,2
+47,Holland Lop,4
+48,Ferret,3
+49,Lionhead,4
+50,Pug,2
+51,Florida White,4
+52,Dwarf,4
+53,Scottish Terrier,2
+54,Chocolate Labrador Retriever,2
+55,Black Labrador Retriever,2
+56,Lancashire Heeler,2
+57,American Eskimo Dog,2
